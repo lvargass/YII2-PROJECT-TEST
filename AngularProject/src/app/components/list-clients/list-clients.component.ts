@@ -52,7 +52,7 @@ export class ListClientsComponent implements OnInit {
         const resultP = await this.gService.executeRequestDelete(`perfil/delete?id=${id}`);
         const resultA = await this.gService.executeRequestDelete(`address/delete?id=${id}`);
 
-        if (resultC.status == 200) {
+        if (resultC.status == 204 && resultP.status == 204 && resultA.status == 204) {
           console.log(resultA, resultP)
           // Aqui va el codigo para crear al nuevo cliente
           // Aqui va el codigo para crear al nuevo cliente

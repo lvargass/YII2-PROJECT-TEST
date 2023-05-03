@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import axios, { AxiosResponse } from 'axios';
-import { IClient } from '../interfaces/i-client';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import axios from 'axios';
 
 
 @Injectable({
@@ -11,7 +9,7 @@ export class GeneralService {
 
   private baseUrl: string = 'http://localhost:4200/mnt/';
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
   /**
    * getClients

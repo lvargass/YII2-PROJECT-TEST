@@ -10,13 +10,6 @@ class ClientController extends \yii\rest\ActiveController
 {
   public $modelClass = 'frontend\models\Client';
 
-  public static function allowedDomains()
-  {
-    return [
-      'http://localhost:4200',                        // star allows all domain
-    ];
-  }
-
   public function behaviors()
   {
     $behaviors = parent::behaviors();

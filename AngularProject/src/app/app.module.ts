@@ -7,7 +7,6 @@ import { ListClientsComponent } from './components/list-clients/list-clients.com
 import { CreateClientComponent } from './components/create-client/create-client.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditClientComponent } from './components/edit-client/edit-client.component';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
     FormsModule,
     ReactiveFormsModule
   ],
